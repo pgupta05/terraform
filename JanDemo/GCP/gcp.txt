@@ -1,0 +1,12 @@
+7038572200
+
+set GOOGLE_APPLICATION_CREDENTIALS="C:\MyDataDir\Terraform\JanDemo\GCP\devops-230818-6cce71bcf27a.json"
+
+gcloud config set compute/zone us-east4-a
+
+
+gcloud services enable cloudbilling.googleapis.com  --project "devops-230818"
+
+gcloud services enable compute.googleapis.com --project "devops-230818"
+
+gcloud alpha billing projects link "devops-230818"   --billing-account=[013582-A6E875-9FE689]
